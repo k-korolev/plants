@@ -5,7 +5,17 @@ body {margin:0;padding:0;font-family:'Inter', sans-serif;font-size:16px;backgrou
 .primary-font {font-family: 'Inter', sans-serif;}
 .secondary-font {font-family: 'Inika', serif;}
 
-header {background:#edf2ec;}
+header {height:134px; display:flex; align-items: center; background:#edf2ec;}
+.navbar {display: flex;}
+.navbar-brand {font-family: 'Inika', serif; text-decoration: none; color:#000;}
+.navbar-toggler {display:none;}
+.navbar-collapse {flex-grow:2;display: flex; justify-content: flex-end;}
+.navbar-nav {margin:0;padding:0;list-style-type: none;display:flex;}
+.navbar-nav li + li {margin-left:2.875rem;}
+.navbar-link {color:#010201;text-decoration: none;}
+.navbar-nav li:first-of-type .navbar-link  {color:#e06733;}
+
+
 #welcome {background:#edf2ec;}
 #service {background:#edf2ec;}
 #contact {background:#edf2ec;}

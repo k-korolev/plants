@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
 
+    <link rel="icon" href="img/icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
 
-    <link rel="stylesheet" type="text/css" href="plants.css">
+    <link rel="stylesheet" href="plants.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
-                <a href="/">logo</a> 
-                <ul>
-                    <li><a href="#welcome">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#prices">Price</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+            <nav class="navbar">
+                <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Plants logo"><span>Plants</span></a>
+                <div class="navbar-toggler"></div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li><a class="navbar-link" href="#welcome">Home</a></li>
+                        <li><a class="navbar-link" href="#about">About us</a></li>
+                        <li><a class="navbar-link" href="#service">Service</a></li>
+                        <li><a class="navbar-link" href="#prices">Price</a></li>
+                        <li><a class="navbar-link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
