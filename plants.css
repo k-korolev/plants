@@ -1,34 +1,147 @@
-body {margin:0;padding:0;font-family:'Inter', sans-serif;font-size:16px;background:#fff;}
-.container {width:1320px; margin-left:auto; margin-right:auto;}
-.product-grid {display: flex; flex-wrap: wrap;}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background :#ffffff;
+}
 
-.primary-font {font-family: 'Inter', sans-serif;}
-.secondary-font {font-family: 'Inika', serif;}
+.container {
+    width: 1320px; 
+    margin-left: auto; 
+    margin-right:auto;
+}
 
-header {height:134px; display:flex; align-items: center; background:#edf2ec;}
-.navbar {display: flex;}
-.navbar-brand {font-family: 'Inika', serif; text-decoration: none; color:#000;}
-.navbar-toggler {display:none;}
-.navbar-collapse {flex-grow:2;display: flex; justify-content: flex-end;}
-.navbar-nav {margin:0;padding:0;list-style-type: none;display:flex;}
-.navbar-nav li + li {margin-left:2.875rem;}
-.navbar-link {color:#010201;text-decoration: none;}
-.navbar-nav li:first-of-type .navbar-link  {color:#e06733;}
+.product-grid {
+    display: flex; 
+    flex-wrap: wrap;
+}
 
+.primary-font {
+    font-family: 'Inter', sans-serif;
+}
 
-#welcome {background:#edf2ec;}
-#service {background:#edf2ec;}
-#contact {background:#edf2ec;}
+.secondary-font {
+    font-family: 'Inika', serif;
+}
 
-h1 {font-size:2.875rem; color:#717171;}
-h1 span {color:#499a18;}
-h2 {font-family: 'Inika', serif; font-size:2.5rem; font-weight:400; color:#499a18;}
-#about h2 span {color:#e06733;}
-#prices h2 {font-family:'Inter', sans-serif; font-weight:700; color:#000;}
-#contact h2 {font-weight: 700;}
+header {
+    height: 134px; 
+    display: flex; 
+    align-items: center; 
+    background: #edf2ec;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar-brand {
+    font-family: 'Inika', serif; 
+    text-decoration: none; 
+    color: #000000;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-collapse {
+    flex-grow: 2;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    display: flex;
+}
+
+.navbar-nav li + li {
+    margin-left: 2.875rem;
+}
+
+.navbar-link {
+    color: #010201; 
+    text-decoration: none;
+}
+
+.navbar-nav li:first-of-type .navbar-link  {
+    color: #e06733;
+}
+
+#welcome {
+    background: #edf2ec;
+}
+
+#service {
+    background: #edf2ec;
+}
+
+#contact {
+    background: #edf2ec;
+}
+
+h1 {
+    font-size: 2.875rem; 
+    color:#717171;
+}
+
+h1 span {
+    color: #499a18;
+}
+
+h2 {
+    font-family: 'Inika', serif; 
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: #499a18;
+}
+
+#about h2 span {
+    color: #e06733;
+}
+
+#prices h2 {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 700; 
+    color:#000000;
+}
+
+#contact h2 {
+    font-weight: 700;
+}
  
-footer .container {display: flex;}
-footer .copyright {min-width:290px;height:130px;display: flex; align-items: center;}
-footer .name {height:130px;flex-grow:4; display: flex; justify-content:center; text-align: center; align-items: center;}
-footer .social {min-width:290px;height:130px;display: flex; justify-content: flex-end; align-items: center;}
-footer .social a + a {margin-left:1.25rem;}
+footer .container {
+    display: flex;
+}
+
+footer .copyright {
+    min-width: 290px;
+    height: 130px;
+    display: flex; 
+    align-items: center;
+}
+
+footer .name {
+    height: 130px;
+    flex-grow: 4; 
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    align-items: center;
+}
+
+footer .social {
+    min-width: 290px;
+    height: 130px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+footer .social a + a {
+    margin-left: 1.25rem;
+}
