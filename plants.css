@@ -1,12 +1,22 @@
-body {margin:0;font-size:16px;background:#fff;}
+body {margin:0;padding:0;font-family:'Inter', sans-serif;font-size:16px;background:#fff;}
 .container {width:1320px; margin-left:auto; margin-right:auto;}
 .product-grid {display: flex; flex-wrap: wrap;}
+
+.primary-font {font-family: 'Inter', sans-serif;}
+.secondary-font {font-family: 'Inika', serif;}
 
 header {background:#edf2ec;}
 #welcome {background:#edf2ec;}
 #service {background:#edf2ec;}
 #contact {background:#edf2ec;}
 
+h1 {font-size:2.875rem; color:#717171;}
+h1 span {color:#499a18;}
+h2 {font-family: 'Inika', serif; font-size:2.5rem; font-weight:400; color:#499a18;}
+#about h2 span {color:#e06733;}
+#prices h2 {font-family:'Inter', sans-serif; font-weight:700; color:#000;}
+#contact h2 {font-weight: 700;}
+ 
 footer .container {display: flex;}
 footer .copyright {min-width:290px;height:130px;display: flex; align-items: center;}
 footer .name {height:130px;flex-grow:4; display: flex; justify-content:center; text-align: center; align-items: center;}
