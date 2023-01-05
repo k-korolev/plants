@@ -64,8 +64,13 @@ header {
 }
 
 .navbar-link {
-    color: #010201; 
     text-decoration: none;
+    color: #010201;
+    transition: all 0.15s ease-in;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
 }
 
 .navbar-nav li:first-of-type .navbar-link  {
@@ -80,7 +85,7 @@ header {
     background: #edf2ec;
 }
 
-#contact {
+#contacts {
     background: #edf2ec;
 }
 
@@ -114,6 +119,16 @@ h2 {
     font-weight: 700;
 }
  
+footer a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.15s ease-in;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 footer .container {
     display: flex;
 }
@@ -125,7 +140,7 @@ footer .copyright {
     align-items: center;
 }
 
-footer .name {
+footer .school {
     height: 130px;
     flex-grow: 4; 
     display: flex; 
@@ -135,13 +150,16 @@ footer .name {
 }
 
 footer .social {
+    display: flex; 
     min-width: 290px;
     height: 130px;
-    display: flex; 
+    margin: 0;
+    padding: 0;
     justify-content: flex-end; 
     align-items: center;
+    list-style-type: none;
 }
 
-footer .social a + a {
+footer .social li + li {
     margin-left: 1.25rem;
 }
