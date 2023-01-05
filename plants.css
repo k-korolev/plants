@@ -6,15 +6,58 @@ body {
     background :#ffffff;
 }
 
+h1 {
+    font-size: 2.875rem; 
+    color:#717171;
+}
+
+h1 span {
+    color: #499a18;
+}
+
+h2 {
+    font-family: 'Inika', serif; 
+    font-size: 2.5rem; 
+    font-weight: 400; 
+    color: #499a18;
+}
+
+.btn {
+    display: flex;
+    width: 158px;
+    height: 44px;
+    font-size: 1.25rem;
+    font-family: 'Inika', serif;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e06733;
+    border-radius: 10px;
+    background: transparent;
+    color: #e06733;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.primary-btn {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.contact-btn {
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #e06733;
+    color: #ffffff;
+}
+
 .container {
     width: 1320px; 
     margin-left: auto; 
     margin-right:auto;
-}
-
-.product-grid {
-    display: flex; 
-    flex-wrap: wrap;
 }
 
 .primary-font {
@@ -85,40 +128,67 @@ header {
     background: #edf2ec;
 }
 
-#contacts {
-    background: #edf2ec;
-}
-
-h1 {
-    font-size: 2.875rem; 
-    color:#717171;
-}
-
-h1 span {
-    color: #499a18;
-}
-
-h2 {
-    font-family: 'Inika', serif; 
-    font-size: 2.5rem; 
-    font-weight: 400; 
-    color: #499a18;
+.product-grid {
+    display: flex; 
+    flex-wrap: wrap;
 }
 
 #about h2 span {
     color: #e06733;
 }
 
+/* Prices */
+#prices {
+    height: 560px;
+}
+
+#prices .content {
+    display: flex;
+}
+
+#prices .content-left {
+    width: 50%;
+}
+
+#prices .content-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: flex-end;
+}
+
 #prices h2 {
+    width: 100%;
     font-family: 'Inter', sans-serif; 
     font-weight: 700; 
     color:#000000;
 }
 
-#contact h2 {
+#prices h2 span {
+    color: #499a18;
+}
+
+#prices .content-right h2 {
+    text-align: right;
+}
+
+/* Contacts */
+#contacts {
+    height: 550px;
+    
+    background: #edf2ec;
+}
+
+#contacts .content {
+    padding: 3.75rem 0 0 0;
+}
+
+#contacts h2 {
+    text-align: center;
     font-weight: 700;
 }
- 
+
+/* Footer */
 footer a {
     text-decoration: none;
     color: #000000;
