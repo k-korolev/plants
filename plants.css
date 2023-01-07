@@ -291,23 +291,9 @@ header {
     height: 560px;
 }
 
-#prices .content {
-    display: flex;
-}
-
-#prices .content-left {
-    width: 50%;
-}
-
-#prices .content-right {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: flex-end;
-}
-
 #prices h2 {
     width: 100%;
+    margin: 0;
     font-family: 'Inter', sans-serif; 
     font-weight: 700; 
     color:#000000;
@@ -317,8 +303,63 @@ header {
     color: #499a18;
 }
 
+#prices .content {
+    display: flex;
+}
+
+#prices .content-left {
+    width: 50%;
+    padding-top: 2.5rem;
+}
+
+#prices .prices-box {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin-top: 3.75rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3e1d5;
+    border-radius: 20px;
+}
+
+#prices .prices-box .price-select {
+    display: flex;
+    width: 170px;
+    height: 50px;
+    margin: 32px 0 0 0;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    background: #edf2ec;
+    border-radius: 20px;
+}
+
+#prices .prices-box .price-select:last-of-type {
+    margin-bottom: 32px;
+}
+
+#prices .prices-box .price-select span {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+#prices .content-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
 #prices .content-right h2 {
     text-align: right;
+}
+
+#prices .content-right button {
+    margin: 2.375rem 0;
 }
 
 /* Contacts */
