@@ -120,8 +120,49 @@ header {
     color: #e06733;
 }
 
+/* Welcome */
 #welcome {
+   
+    height: 530px;
     background: #edf2ec;
+}
+
+#welcome .container {
+    display: flex;
+    padding-top: 3.75rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#welcome .content {
+    order: 2;
+    width: 42%;
+    margin-left: 8%;
+    padding-top: 2.25rem;
+}
+
+#welcome .content h1 {
+    margin: 0 0 3rem 0;
+    padding: 0;
+}
+
+#welcome .content p {
+    font-size: 1.25rem;
+    color: #636060;
+}
+
+#welcome .leafs {
+    display: flex;
+    order: 1;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#welcome .content .primary-btn {
+    margin: 3rem 0 0 0;
 }
 
 #service {
