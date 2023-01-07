@@ -25,13 +25,13 @@ h2 {
 .btn {
     display: flex;
     width: 158px;
-    height: 44px;
+    height: 50px;
     font-size: 1.25rem;
     font-family: 'Inika', serif;
     justify-content: center;
     align-items: center;
-    border: 2px solid #e06733;
-    border-radius: 10px;
+    border: 1px solid #e06733;
+    border-radius: 5px;
     background: transparent;
     color: #e06733;
     cursor: pointer;
@@ -39,9 +39,12 @@ h2 {
 }
 
 .primary-btn {
+    height: 44px;
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
+    border: 2px solid #e06733;
+    border-radius: 10px;
     color: #000000;
 }
 
@@ -191,11 +194,15 @@ header {
     color: #636060;
 }
 
-#about .content h2 {
+#about h2 {
     max-width: 475px;
 }
 
-#about .content p {
+#about h2 span {
+    color: #e06733;
+}
+
+#about p {
     font-size: 1.25rem;
     line-height: 1.875rem;
 }
@@ -212,13 +219,71 @@ header {
     background: #edf2ec;
 }
 
-.product-grid {
-    display: flex; 
+#service .container {
+    display: flex;
     flex-wrap: wrap;
+    padding-top: 2.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-#about h2 span {
+#service .content {
+    max-width: 310px;
+}
+
+#service .content h2 {
+    margin: 0;
+}
+
+#service .buttons {      
+    display: flex;
+    width: calc(100% - 310px - 142px);
+    margin-left: 142px;
+    padding-top: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#service .buttons button + button {
+    margin-left: 2.375rem;
+}
+
+.product-grid {
+    display: flex; 
+    padding-top: 5.625rem;
+    padding-bottom: 65px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-grid > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 450px;
+    margin-bottom: 55px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #e3e1d5;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-grid > div:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.product-grid > div .name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25rem;
     color: #e06733;
+}
+
+.product-grid > div .description {
+    color: #717171;
 }
 
 /* Prices */
