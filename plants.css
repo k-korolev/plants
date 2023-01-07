@@ -75,11 +75,16 @@ header {
     background: #edf2ec;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
+    align-items: baseline;
 }
 
 .navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
     font-family: 'Inika', serif; 
     text-decoration: none; 
     color: #000000;
@@ -107,6 +112,10 @@ header {
 }
 
 .navbar-link {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #010201;
     transition: all 0.15s ease-in;
