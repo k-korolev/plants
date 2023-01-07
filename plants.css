@@ -327,13 +327,58 @@ header {
     background: #edf2ec;
 }
 
+#contacts .container {
+    display: flex;
+    padding-top: 3.375rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 #contacts .content {
-    padding: 3.75rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 470px - 112px);
+    order: 2;
+    padding: 0.75rem 0 0 112px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #contacts h2 {
-    text-align: center;
+    width: 100%;
+    margin: 0;
     font-weight: 700;
+}
+
+#contacts .city-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 2.25rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#contacts .city-select {
+    display: flex;
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: #d6e7d2;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+#contacts .city-select span {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.5px;
+    color: #717171;
+}
+
+#contacts .img {
+    order: 1;
+    width: 470px;
 }
 
 /* Footer */
