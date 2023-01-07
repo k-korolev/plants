@@ -139,14 +139,14 @@ header {
 #welcome .container {
     display: flex;
     padding-top: 3.75rem;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 #welcome .content {
     order: 2;
-    width: 42%;
-    margin-left: 8%;
+    width: 50%;
+    max-width: 550px;
     padding-top: 2.25rem;
 }
 
@@ -157,6 +157,7 @@ header {
 
 #welcome .content p {
     font-size: 1.25rem;
+    line-height: 35px;
     color: #636060;
 }
 
@@ -174,6 +175,39 @@ header {
     margin: 3rem 0 0 0;
 }
 
+/* About */
+#about {
+    height: 666px;
+}
+
+#about .container {
+    display: flex;
+    padding-top: 5.75rem;
+}
+
+#about .content {
+    width: 50%;
+    max-width: 605px;
+    color: #636060;
+}
+
+#about .content h2 {
+    max-width: 475px;
+}
+
+#about .content p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+#about .plant {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Service */
 #service {
     background: #edf2ec;
 }
@@ -225,7 +259,6 @@ header {
 /* Contacts */
 #contacts {
     height: 550px;
-    
     background: #edf2ec;
 }
 
