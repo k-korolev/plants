@@ -311,15 +311,17 @@ header {
     height: 560px;
 }
 
-#prices h2 {
+#prices h2,
+#prices h3 {
     width: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif; 
+    font-size: 2.5rem;
     font-weight: 700; 
     color:#000000;
 }
 
-#prices h2 span {
+#prices h3 span {
     color: #499a18;
 }
 
@@ -392,7 +394,7 @@ header {
     align-items: flex-end;
 }
 
-#prices .content-right h2 {
+#prices .content-right h3 {
     text-align: right;
 }
 
