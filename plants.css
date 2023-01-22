@@ -535,7 +535,7 @@ footer .social li + li {
 
 @media (min-width: 320px) and (max-width: 767px) {
     /* temp */
-    header, #prices, #contacts, footer {display:none;}
+    header, #contacts, footer {display:none;}
 
     .btn {
         font-size: 15px;
@@ -668,6 +668,44 @@ footer .social li + li {
         text-align: center;
     }
 
+    /* Prices */
+    #prices {
+        height: unset;
+    }
+    #prices .content {
+        flex-wrap: wrap;
+
+    }
+    #prices .content-left {
+        width: 100%;
+        padding-top: 25px;
+    }
+    #prices .content-left h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #prices .prices-box {
+        width: 222px;
+        margin: 2.5rem auto 0 auto;
+    }
+    #prices .prices-box .price-select {
+        width: 118px;
+        margin: 30px 0 0 0;
+        padding: 0 30px;
+    }
+    #prices .content-right {
+        width: 100%;
+        padding-top: 1.25rem;
+        align-items: center;
+    }
+    #prices .content-right h3 {
+        font-size: 1.5rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    #prices .content-right img {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
