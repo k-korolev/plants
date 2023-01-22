@@ -414,9 +414,6 @@ header {
 #contacts .content {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 470px - 12px);
-    order: 2;
-    padding: 0.25rem 0 0 62px;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -437,9 +434,6 @@ header {
 
 #contacts .city-select {
     display: flex;
-    width: 400px;
-    height: 50px;
-    padding: 0 30px 0 20px;
     justify-content: space-between;
     align-items: center;
     background: #d6e7d2;
@@ -469,11 +463,6 @@ header {
     line-height: 2.5rem;
     letter-spacing: 0.5px;
     color: #717171;
-}
-
-#contacts .img {
-    order: 1;
-    width: 470px;
 }
 
 /* Footer */
@@ -535,7 +524,7 @@ footer .social li + li {
 
 @media (min-width: 320px) and (max-width: 767px) {
     /* temp */
-    header, #contacts, footer {display:none;}
+    header {display:none;}
 
     .btn {
         font-size: 15px;
@@ -674,7 +663,6 @@ footer .social li + li {
     }
     #prices .content {
         flex-wrap: wrap;
-
     }
     #prices .content-left {
         width: 100%;
@@ -706,6 +694,57 @@ footer .social li + li {
     #prices .content-right img {
         display: none;
     }
+
+    /* Contacts */
+    #contacts {
+        height: unset;
+    }
+    #contacts .container {
+        padding-top: 25px;
+        flex-wrap: wrap;
+    }
+    #contacts h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #contacts .city-wrapper {
+        margin-top: 80px;
+        margin-bottom: 132px;
+    }
+    #contacts .city-select {
+        width: 250px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 100%;
+    }
+    #contacts .img img {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .copyright {
+        height: unset;
+        justify-content: center;
+    }
+    footer .copyright p {
+        margin: 22px auto 16px auto;
+    }
+    footer .school {
+        height: unset;
+    }
+    footer .social {
+        height: unset;
+        margin: 12px auto 16px auto;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -719,5 +758,18 @@ footer .social li + li {
     #service .buttons button + button {
         margin-left: 2.375rem;
     }
-
+    #contacts .content {
+        width: calc(100% - 470px - 12px);
+        padding: 0.25rem 0 0 62px;
+        order: 2;
+    }
+    #contacts .city-select {
+        width: 400px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 470px;
+        order: 1;
+    }
 }
