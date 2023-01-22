@@ -536,3 +536,90 @@ footer .social a img {
 footer .social li + li {
     margin-left: 1.25rem;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    /* temp */
+    header, #service, #prices, #contacts, footer {display:none;}
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: calc(100% - 50px);
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    /* Welcome */
+    #welcome {
+        flex-wrap: wrap;
+        height: unset;
+    }
+    #welcome .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    #welcome .content {
+        width: 100%;
+        padding: 0;
+        max-width: unset;
+    }
+    #welcome .content h1 {
+        margin: 0 0 1.25rem 0;
+    }
+    #welcome .content p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #welcome .content .primary-btn {
+        margin: 1.25rem 0 0 0;
+    }
+    #welcome .leafs {
+        display: none;
+    }
+
+    /* About */
+    #about {
+        height: unset;
+    }
+    #about .container {
+        flex-wrap: wrap;
+        padding-top: 1.75rem;
+    }
+    #about .content {
+        width: 100%;
+        margin: 0;
+    }
+    #about h2 {
+        margin: 0 0 1.25rem 0;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        text-align: center;
+    }
+    #about p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #about .plant {
+        width: 100%;
+    }
+    #about .plant img {
+        display:block;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+}
