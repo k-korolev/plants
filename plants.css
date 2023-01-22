@@ -106,10 +106,6 @@ header {
     text-decoration: underline;
 }
 
-.navbar-toggler {
-    display: none;
-}
-
 .navbar-collapse {
     flex-grow: 2;
     display: flex; 
@@ -258,10 +254,6 @@ header {
     padding-top: 2.0rem;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-#service .buttons button + button {
-    margin-left: 2.375rem;
 }
 
 .product-grid {
@@ -418,9 +410,6 @@ header {
 #contacts .content {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 470px - 12px);
-    order: 2;
-    padding: 0.25rem 0 0 62px;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -441,9 +430,6 @@ header {
 
 #contacts .city-select {
     display: flex;
-    width: 400px;
-    height: 50px;
-    padding: 0 30px 0 20px;
     justify-content: space-between;
     align-items: center;
     background: #d6e7d2;
@@ -473,11 +459,6 @@ header {
     line-height: 2.5rem;
     letter-spacing: 0.5px;
     color: #717171;
-}
-
-#contacts .img {
-    order: 1;
-    width: 470px;
 }
 
 /* Footer */
@@ -535,4 +516,519 @@ footer .social a img {
 
 footer .social li + li {
     margin-left: 1.25rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn {
+        font-size: 15px;
+        width: 120px;
+        height: 34px;
+    }
+    .primary-btn {
+        width: 100px;
+        height: 34px;
+        font-size: 0.625rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        letter-spacing: 0.5px;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: calc(100% - 50px);
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    /* Header */
+    header {
+        height: 96px;
+    }
+    .navbar {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navbar-brand {
+        margin-top:6px;
+    }
+    .navbar details {
+        transition: all 0.15s ease-in;
+    }
+    .navbar summary {
+        margin-top:-14px;
+    }
+    .navbar summary::marker {color: #edf2ec;}
+    .navbar details .menu-open {
+        display: block;
+    }
+    .navbar details .menu-close {
+        display: none;
+    }
+    .navbar details[open] .menu-open {
+        display: none;
+    }
+    .navbar details[open] .menu-close {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-toggler img {
+        width: 40px;
+    }
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-nav.mobile {
+        flex-wrap: wrap;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background: #C1E698;
+    }
+    .navbar-nav.mobile > li {width: 100%;}
+    .navbar-nav.mobile li + li {margin-left: 0;}
+
+    /* Welcome */
+    #welcome {
+        flex-wrap: wrap;
+        height: unset;
+    }
+    #welcome .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    #welcome .content {
+        width: 100%;
+        padding: 0;
+        max-width: unset;
+    }
+    #welcome .content h1 {
+        margin: 0 0 1.25rem 0;
+    }
+    #welcome .content p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.55rem;
+    }
+    #welcome .content .primary-btn {
+        margin: 1.65rem 0 0 0;
+    }
+    #welcome .leafs {
+        display: none;
+    }
+
+    /* About */
+    #about {
+        height: unset;
+    }
+    #about .container {
+        flex-wrap: wrap;
+        padding-top: 1.75rem;
+        padding-bottom: 25px;
+    }
+    #about .content {
+        width: 100%;
+        margin: 0;
+    }
+    #about h2 {
+        margin: 0 0 1rem 0;
+        font-size: 1.5rem;
+        line-height: 34px;
+        letter-spacing: 0.35px;
+        text-align: center;
+    }
+    #about p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.55rem;
+    }
+    #about .plant {
+        width: 100%;
+    }
+    #about .plant img {
+        display:block;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Service */
+    #service .container {
+        padding-top: 2rem;
+    }
+    #service .content h2 {
+        width: 200px;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+    #service .buttons {
+        width:100%;
+        margin-left: 0;
+        padding-top: 41px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #service .buttons button {
+        margin-right: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    .product-grid {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    .product-grid > div {
+        width: 280px;
+        margin-bottom: 31px;
+    }
+    .product-grid > div:last-of-type {
+        margin-bottom: 27px;
+    }
+    .product-grid > div .image {
+        width: 280px;
+        height: 350px;
+        text-align: center;
+    }
+    .product-grid > div .name {
+        margin-top: 0.625rem;
+    }
+    .product-grid > div .description {
+        width: 200px;
+        margin-top: 0.625rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    /* Prices */
+    #prices {
+        height: unset;
+    }
+    #prices .content {
+        flex-wrap: wrap;
+    }
+    #prices .content-left {
+        width: 100%;
+        padding-top: 25px;
+    }
+    #prices .content-left h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #prices .prices-box {
+        width: 222px;
+        margin: 2.5rem auto 0 auto;
+        padding-top: 12px;
+    }
+    #prices .prices-box .price-select {
+        width: 118px;
+        margin: 14px 0 0 0;
+        padding: 0 30px;
+    }
+    #prices .prices-box .price-select span {
+        font-size: 15px;
+    }
+    #prices .content-right {
+        width: 100%;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    #prices .content-right h3 {
+        font-size: 1.25rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    #prices .content-right button {
+        margin: 1.25rem 0 2.5rem 0;
+    }
+    #prices .content-right img {
+        display: none;
+    }
+
+    /* Contacts */
+    #contacts {
+        height: unset;
+    }
+    #contacts .container {
+        padding-top: 25px;
+        flex-wrap: wrap;
+    }
+    #contacts h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #contacts .city-wrapper {
+        margin-top: 80px;
+        margin-bottom: 132px;
+        justify-content: center;
+    }
+    #contacts .city-select {
+        width: 250px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 100%;
+    }
+    #contacts .img img {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .copyright {
+        height: unset;
+        justify-content: center;
+    }
+    footer .copyright p {
+        margin: 22px auto 16px auto;
+    }
+    footer .school {
+        height: unset;
+    }
+    footer .social {
+        height: unset;
+        margin: 12px auto 16px auto;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 614px) and (max-width: 767px) {
+    .product-grid > div {
+        margin-left: 50px;
+        margin-right:50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 668px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header {
+        height: 117px;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar details {
+        display: none;
+    }
+
+    #welcome {
+        height: unset;
+        padding-bottom: 4.5rem;
+    }
+    #welcome .container {
+        padding-top: 2.5rem;
+    }
+    #welcome .content {
+        width: 55%;
+        max-width: 600px;
+        padding-top: 0;
+        order: 1;
+    }
+    #welcome .content h1 {
+        margin-bottom: 2rem;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    #welcome .content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    #welcome .content .primary-btn {
+        margin-top: 2.35rem;
+    }
+    #welcome .leafs {
+        width:45%;
+        order: 2;
+    }
+    #welcome .leafs img {
+        width: 280px;
+        margin-left: 25px;
+    }
+
+    #about {
+        height: unset;
+    }
+    #about .container {
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+    #about .content {
+        width: 100%;
+        max-width: unset;;
+        margin-top: 2.275rem;
+    }
+    #about h2 {
+        margin-bottom: 3.45rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 35px;
+        text-align: center;
+    }
+    #about .plant {
+        width: 100%;
+    }
+    #about .plant img {
+        width: 250px;
+        margin: 2.875rem auto 6rem auto;
+    }
+
+    #service {
+        height: unset;
+    }
+    #service .container {
+        flex-wrap: wrap;
+    }
+    #service .content {
+        width: 300px;
+        max-width: unset;
+    }
+    #service .content h2 {
+        margin-top: 1.25rem;
+        font-size: 35px;
+    }
+    #service .buttons {
+        width: 100%;
+        margin: 0;
+        padding-top: 2.75rem;
+    }
+    #service .buttons .btn {
+        margin-right: 40px;
+    }
+    .product-grid {
+        padding-top: 2.5rem;
+        padding-bottom:36px;
+    }
+    .product-grid > div {
+        width: 280px;
+        margin-bottom: 35px;
+    }
+    .product-grid > div .name {
+        margin-top: 0.5rem;
+    }
+    .product-grid > div .description {
+        width: 210px;
+        text-align: center;
+    }
+
+    #prices {
+        height: unset;
+        padding-bottom: 80px;
+    }
+    #prices .content-left {
+        padding-top: 2.45rem;
+    }
+    #prices h2 {
+        padding-left: 1rem;
+        font-size: 35px;
+    }
+    #prices .content-right {
+        padding-top: 8.875rem;
+    }
+    #prices .content-right h3 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+    #prices .content-right button {
+        margin: 1.75rem 0;
+    }
+
+    #contacts {
+        height: unset;
+    }
+    #contacts .container {
+        padding-top: 2.5rem;
+        flex-wrap: wrap;
+    }
+    #contacts .content {
+        width: 100%;
+        text-align: center;
+    }
+    #contacts .city-wrapper {
+        margin-top: 6.25rem;
+        justify-content: center;
+    }
+    #contacts .city-select {
+        width: 400px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 100%;
+        margin-top: 15.5rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+    #contacts .img img {
+        width: 200px;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .copyright {
+        width:100%;
+        height: unset;
+        justify-content: center;
+    }
+    footer .copyright p {
+        margin: 30px auto 16px auto;
+    }
+    footer .school {
+        width:100%;
+        height: unset;
+    }
+    footer .social {
+        height: unset;
+        margin: 30px auto 30px auto;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar details {
+        display: none;
+    }
+    
+    #service .buttons button + button {
+        margin-left: 2.375rem;
+    }
+    #contacts .content {
+        width: calc(100% - 470px - 12px);
+        padding: 0.25rem 0 0 62px;
+        order: 2;
+    }
+    #contacts .city-select {
+        width: 400px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 470px;
+        order: 1;
+    }
 }
