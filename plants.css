@@ -106,10 +106,6 @@ header {
     text-decoration: underline;
 }
 
-.navbar-toggler {
-    display: none;
-}
-
 .navbar-collapse {
     flex-grow: 2;
     display: flex; 
@@ -523,9 +519,6 @@ footer .social li + li {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    /* temp */
-    header {display:none;}
-
     .btn {
         font-size: 15px;
         width: 120px;
@@ -540,6 +533,7 @@ footer .social li + li {
     h1 {
         font-size: 1.5rem;
         line-height: 2.25rem;
+        letter-spacing: 0.5px;
     }
     p {
         font-size: 1rem;
@@ -549,6 +543,24 @@ footer .social li + li {
         width: calc(100% - 50px);
         margin-left: 25px;
         margin-right: 25px;
+    }
+
+    /* Header */
+    header {
+        height: 96px;
+    }
+    .navbar {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-toggler img {
+        width: 40px;
+    }
+    .navbar-collapse {
+        display: none;
     }
 
     /* Welcome */
@@ -571,10 +583,10 @@ footer .social li + li {
     #welcome .content p {
         margin: 0;
         font-size: 1rem;
-        line-height: 1.5rem;
+        line-height: 1.55rem;
     }
     #welcome .content .primary-btn {
-        margin: 1.25rem 0 0 0;
+        margin: 1.65rem 0 0 0;
     }
     #welcome .leafs {
         display: none;
@@ -587,21 +599,23 @@ footer .social li + li {
     #about .container {
         flex-wrap: wrap;
         padding-top: 1.75rem;
+        padding-bottom: 25px;
     }
     #about .content {
         width: 100%;
         margin: 0;
     }
     #about h2 {
-        margin: 0 0 1.25rem 0;
+        margin: 0 0 1rem 0;
         font-size: 1.5rem;
-        line-height: 2.25rem;
+        line-height: 34px;
+        letter-spacing: 0.35px;
         text-align: center;
     }
     #about p {
         margin: 0;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 15px;
+        line-height: 1.55rem;
     }
     #about .plant {
         width: 100%;
@@ -614,14 +628,18 @@ footer .social li + li {
     }
 
     /* Service */
+    #service .container {
+        padding-top: 2rem;
+    }
     #service .content h2 {
         width: 200px;
         font-size: 1.5rem;
+        letter-spacing: 0.5px;
     }
     #service .buttons {
         width:100%;
         margin-left: 0;
-        padding-top: 35px;
+        padding-top: 41px;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
@@ -630,13 +648,13 @@ footer .social li + li {
         margin-bottom: 0.625rem;
     }
     .product-grid {
-        padding-top: 2.5rem;
+        padding-top: 2rem;
         padding-bottom: 0;
         justify-content: center;
     }
     .product-grid > div {
         width: 280px;
-        margin-bottom: 34px;
+        margin-bottom: 31px;
     }
     .product-grid > div:last-of-type {
         margin-bottom: 27px;
@@ -675,21 +693,28 @@ footer .social li + li {
     #prices .prices-box {
         width: 222px;
         margin: 2.5rem auto 0 auto;
+        padding-top: 12px;
     }
     #prices .prices-box .price-select {
         width: 118px;
-        margin: 30px 0 0 0;
+        margin: 14px 0 0 0;
         padding: 0 30px;
+    }
+    #prices .prices-box .price-select span {
+        font-size: 15px;
     }
     #prices .content-right {
         width: 100%;
-        padding-top: 1.25rem;
+        padding-top: 1rem;
         align-items: center;
     }
     #prices .content-right h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 35px;
         text-align: center;
+    }
+    #prices .content-right button {
+        margin: 1.25rem 0 2.5rem 0;
     }
     #prices .content-right img {
         display: none;
@@ -710,6 +735,7 @@ footer .social li + li {
     #contacts .city-wrapper {
         margin-top: 80px;
         margin-bottom: 132px;
+        justify-content: center;
     }
     #contacts .city-select {
         width: 250px;
@@ -751,9 +777,16 @@ footer .social li + li {
     .container {
         width: 100%;
     }
+
+    .navbar-toggler {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
+    .navbar-toggler {
+        display: none;
+    }
     
     #service .buttons button + button {
         margin-left: 2.375rem;
