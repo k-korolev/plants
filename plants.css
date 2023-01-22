@@ -775,11 +775,189 @@ footer .social li + li {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .container {
-        width: 100%;
+        width: 668px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
-
+    header {
+        height: 117px;
+    }
     .navbar-toggler {
         display: none;
+    }
+
+    #welcome {
+        height: unset;
+        padding-bottom: 4.5rem;
+    }
+    #welcome .container {
+        padding-top: 2.5rem;
+    }
+    #welcome .content {
+        width: 55%;
+        max-width: 600px;
+        padding-top: 0;
+        order: 1;
+    }
+    #welcome .content h1 {
+        margin-bottom: 2rem;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    #welcome .content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    #welcome .content .primary-btn {
+        margin-top: 2.35rem;
+    }
+    #welcome .leafs {
+        width:45%;
+        order: 2;
+    }
+    #welcome .leafs img {
+        width: 280px;
+        margin-left: 25px;
+    }
+
+    #about {
+        height: unset;
+    }
+    #about .container {
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+    #about .content {
+        width: 100%;
+        max-width: unset;;
+        margin-top: 2.275rem;
+    }
+    #about h2 {
+        margin-bottom: 3.45rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 35px;
+        text-align: center;
+    }
+    #about .plant {
+        width: 100%;
+    }
+    #about .plant img {
+        width: 250px;
+        margin: 2.875rem auto 6rem auto;
+    }
+
+    #service {
+        height: unset;
+    }
+    #service .container {
+        flex-wrap: wrap;
+    }
+    #service .content {
+        width: 300px;
+        max-width: unset;
+    }
+    #service .content h2 {
+        margin-top: 1.25rem;
+        font-size: 35px;
+    }
+    #service .buttons {
+        width: 100%;
+        margin: 0;
+        padding-top: 2.75rem;
+    }
+    #service .buttons .btn {
+        margin-right: 40px;
+    }
+    .product-grid {
+        padding-top: 2.5rem;
+        padding-bottom:36px;
+    }
+    .product-grid > div {
+        width: 280px;
+        margin-bottom: 35px;
+    }
+    .product-grid > div .name {
+        margin-top: 0.5rem;
+    }
+    .product-grid > div .description {
+        width: 210px;
+        text-align: center;
+    }
+
+    #prices {
+        height: unset;
+        padding-bottom: 80px;
+    }
+    #prices .content-left {
+        padding-top: 2.45rem;
+    }
+    #prices h2 {
+        padding-left: 1rem;
+        font-size: 35px;
+    }
+    #prices .content-right {
+        padding-top: 8.875rem;
+    }
+    #prices .content-right h3 {
+        font-size: 25px;
+        line-height: 1.35;
+    }
+    #prices .content-right button {
+        margin: 1.75rem 0;
+    }
+
+    #contacts {
+        height: unset;
+    }
+    #contacts .container {
+        padding-top: 2.5rem;
+        flex-wrap: wrap;
+    }
+    #contacts .content {
+        width: 100%;
+        text-align: center;
+    }
+    #contacts .city-wrapper {
+        margin-top: 6.25rem;
+        justify-content: center;
+    }
+    #contacts .city-select {
+        width: 400px;
+        height: 50px;
+        padding: 0 30px 0 20px;
+    }
+    #contacts .img {
+        width: 100%;
+        margin-top: 15.5rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+    #contacts .img img {
+        width: 200px;
+    }
+
+    /* Footer */
+    footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .copyright {
+        width:100%;
+        height: unset;
+        justify-content: center;
+    }
+    footer .copyright p {
+        margin: 30px auto 16px auto;
+    }
+    footer .school {
+        width:100%;
+        height: unset;
+    }
+    footer .social {
+        height: unset;
+        margin: 30px auto 30px auto;
+        justify-content: center;
     }
 }
 
